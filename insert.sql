@@ -74,3 +74,21 @@ INSERT INTO clientes (nombre, correo, telefono) VALUES
 ('Mateo Cárdenas', 'mateo.cardenas@gmail.com', '3055566778'),
 ('Isabela Vargas', 'isabela.vargas@gmail.com', '3016677889'),
 ('Tomás Herrera', 'tomas.herrera@gmail.com', '3037788990');
+
+-- Insertar ventas
+INSERT INTO ventas (id_cliente, fecha) VALUES
+(1, '2025-03-05'),
+(2, '2025-03-06'),
+(3, '2025-03-07'),
+(4, '2025-03-10'),
+(5, '2025-03-15'),
+(6, '2025-04-01'),
+(7, '2025-04-02'),
+(8, '2025-04-10'),
+(9, '2025-04-15'),
+(10, '2025-05-01'),
+(11, '2025-05-02'),
+(12, '2025-05-05'),
+(13, '2025-05-10'),
+(14, '2025-05-12'),
+(15, '2025-05-15');
