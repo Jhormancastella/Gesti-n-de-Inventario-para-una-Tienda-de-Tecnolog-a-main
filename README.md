@@ -141,7 +141,7 @@ NOTICE:  ? Venta registrada correctamente. ID: 8
 ```
 ---
 
-### 🌟 Proyecto desarrollado como parte del examen final del curso de bases de datos.
+### 🌟 Proyecto desarrollado como parte del examen final del curso de bases de datos PostgreSQL .
 
 🚨 **Estado del Ejercicio**  
 Culminado.  
