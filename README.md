@@ -140,8 +140,41 @@ ERROR:  ? Stock insuficiente para el producto ID 2: disponible 2, solicitado 5.
 NOTICE:  ? Venta registrada correctamente. ID: 8
 ```
 ---
+### 🚨 **Zona de Alertas**
 
-### 🌟 Proyecto desarrollado como parte del examen final del curso de bases de datos PostgreSQL .
+#### ⚠️ **Advertencia: Verificación de Datos**
+Antes de ejecutar los scripts (`db.sql`, `insert.sql`), asegúrate de que:
+- PostgreSQL esté correctamente instalado y configurado.
+- 
+---
+
+#### 🔧 **Importante: Configuración Inicial**
+Para evitar problemas durante la ejecución del procedimiento almacenado `registrar_venta_proc`, ten en cuenta lo siguiente:
+- **Verifica el stock disponible** antes de intentar registrar una venta.
+- Asegúrate de que los IDs de clientes y productos existan en las tablas correspondientes.
+- Usa cantidades válidas (números enteros positivos) al registrar ventas.
+
+Ejemplo de error común:
+```sql
+ERROR:  ? Stock insuficiente para el producto ID 2: disponible 2, solicitado 5.
+```
+
+> **Consejo:** Si recibes este error, verifica el stock actual con la consulta:
+```sql
+SELECT id_producto, nombre, stock FROM productos;
+```
+
+---
+
+#### 📌 **Recomendación: Pruebas y Depuración**
+- Antes de realizar pruebas, utiliza una copia de seguridad de tu base de datos.
+- Ejecuta las consultas avanzadas (`queries.sql`) para validar la integridad de los datos después de realizar operaciones críticas.
+
+> **Ejemplo de consulta útil:**
+```sql
+-- Consulta para verificar productos con stock bajo
+SELECT * FROM productos WHERE stock < 5;
+```
 
 🚨 **Estado del Ejercicio**  
 Culminado.  
@@ -150,3 +183,4 @@ Culminado.
 Jhorman Jesús Castellanos Morales  
 
 ---
+### 🌟 Proyecto desarrollado como parte del examen final del curso de bases de datos PostgreSQL .
