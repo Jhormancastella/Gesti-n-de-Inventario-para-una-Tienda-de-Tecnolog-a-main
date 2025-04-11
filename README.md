@@ -14,8 +14,7 @@ El nuevo sistema permite gestionar eficientemente productos, ventas, clientes y 
 ---
 
 ## 🖼️ Modelo Entidad-Relación
-![modelo_ER](https://github.com/user-attachments/assets/d1ecce06-6d86-48b8-8e74-50b17f7f0d26)
-
+![modelo_ER](https://github.com/user-attachments/assets/6ff2d76e-822d-47d3-b33b-83ce418de479)
 
 ## 🖼️ Diagrama flujo
 
@@ -56,9 +55,9 @@ Contiene la estructura de la base de datos:
 - Restricciones: `NOT NULL`, `CHECK`, `UNIQUE`
 
 ### 2. `insert.sql`
-Incluye al menos 15 registros por tabla con datos realistas:
+Incluye al menos 15 registros por tabla con datos:
 - Productos con diferentes categorías y proveedores
-- Clientes con correos electrónicos reales (@gmail.com)
+- Clientes con correos electrónicos.
 - Ventas y detalles de ventas simuladas
 
 ### 3. `queries.sql`
